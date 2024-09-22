@@ -6,6 +6,7 @@ namespace BookStoreApi.Services.Brands;
 public interface IBrandService
 {
     IEnumerable<Brand> GetAllBrands();
+    Brand GetBrandById(int id);
 }
 
 public class BrandService : IBrandService
@@ -19,6 +20,11 @@ public class BrandService : IBrandService
 
     public IEnumerable<Brand> GetAllBrands()
     {
-        return repository.GetAllBrands();
+        return this.repository.GetAllBrands();
+    }
+
+    public Brand GetBrandById(int id)
+    {
+        return this.repository.GetBrandById(id);
     }
 }

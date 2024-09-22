@@ -4,7 +4,8 @@ namespace BookStoreApi.Data.Repositories;
 
 public interface IBrandRepository
 {
-    IEnumerable<Brand> GetAllBrands();  
+    IEnumerable<Brand> GetAllBrands();
+    Brand GetBrandById(int id);
 }
 
 public class BrandRepository : IBrandRepository
@@ -19,5 +20,11 @@ public class BrandRepository : IBrandRepository
     public IEnumerable<Brand> GetAllBrands()
     {
         return this.context.Brands.ToList();
+    }
+
+    public Brand GetBrandById(int id)
+    {
+        var brand = this.context.Brands.Find(id);
+        return brand;
     }
 }
