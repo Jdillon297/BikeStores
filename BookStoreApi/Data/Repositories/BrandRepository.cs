@@ -24,7 +24,6 @@ public class BrandRepository : IBrandRepository
 
     public Brand GetBrandById(int id)
     {
-        var brand = this.context.Brands.Find(id);
-        return brand;
+        return this.context.Brands.Find(id);
     }
 }
