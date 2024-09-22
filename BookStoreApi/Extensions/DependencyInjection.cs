@@ -1,6 +1,6 @@
 ﻿using BookStoreApi.Data;
 using BookStoreApi.Data.Repositories;
-using BookStoreApi.Services.Brands;
+using BookStoreApi.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookStoreApi.Extensions;
@@ -18,8 +18,12 @@ public static class DependencyInjection
 
     private static IServiceCollection ConfigureServices(this IServiceCollection services)
     {
-        services.AddScoped<IBrandService,BrandService>();
         services.AddScoped<IBrandRepository,BrandRepository>();
+        services.AddScoped<IBrandService,BrandService>();
+        services.AddScoped<ICategoryRepository, CategoryRepository>();
+        services.AddScoped<ICategoryService, CategoryService>();
+        services.AddScoped<IProductRepository, ProductRepository>();
+        services.AddScoped<IProductService, ProductService>();  
         return services;
     }
 

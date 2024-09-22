@@ -1,7 +1,7 @@
 ﻿using BookStoreApi.Data.Repositories;
 using BookStoreApi.Entities;
 
-namespace BookStoreApi.Services.Brands;
+namespace BookStoreApi.Services;
 
 public interface IBrandService
 {
@@ -9,7 +9,7 @@ public interface IBrandService
     Brand GetBrandById(int id);
 }
 
-public class BrandService : IBrandService
+public sealed class BrandService : IBrandService
 {
     private readonly IBrandRepository repository;
 
@@ -20,11 +20,11 @@ public class BrandService : IBrandService
 
     public IEnumerable<Brand> GetAllBrands()
     {
-        return this.repository.GetAllBrands();
+        return repository.GetAllBrands();
     }
 
     public Brand GetBrandById(int id)
     {
-        return this.repository.GetBrandById(id);
+        return repository.GetBrandById(id);
     }
 }
