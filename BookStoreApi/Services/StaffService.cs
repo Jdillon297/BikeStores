@@ -36,7 +36,7 @@ public sealed class StaffService : IStaffService
         var managers = (from s in staff
                         join d in distinctManagerIds on s.StaffId equals d
                         select s
-                      ).ToList();
+                        ).ToList();
 
         return MapToDto(managers);
     }
