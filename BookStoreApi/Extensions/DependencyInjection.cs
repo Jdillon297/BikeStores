@@ -9,23 +9,26 @@ public static class DependencyInjection
 {
 
     public static IServiceCollection AddDependencyInjection(this IServiceCollection services,WebApplicationBuilder builder)
-    {
-       _ = services.AddDatabaseContext(builder.Configuration);
-        _ = services.ConfigureServices();
+    {      
+        _ = services.ConfigureServices(builder.Configuration);
         return services;
 
     }
 
-    private static IServiceCollection ConfigureServices(this IServiceCollection services)
+    private static IServiceCollection ConfigureServices(this IServiceCollection services, IConfiguration configuration)
     {
+        services.AddDatabaseContext(configuration);
+
         services.AddScoped<IBrandRepository,BrandRepository>();
-        services.AddScoped<IBrandService,BrandService>();
         services.AddScoped<ICategoryRepository, CategoryRepository>();
-        services.AddScoped<ICategoryService, CategoryService>();
         services.AddScoped<IProductRepository, ProductRepository>();
-        services.AddScoped<IProductService, ProductService>();  
         services.AddScoped<IStaffRepository, StaffRepository>();
+        
+        services.AddScoped<IBrandService,BrandService>();
+        services.AddScoped<ICategoryService, CategoryService>();
+        services.AddScoped<IProductService, ProductService>();  
         services.AddScoped<IStaffService, StaffService>();
+        
         return services;
     }
 
