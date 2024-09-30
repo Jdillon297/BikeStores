@@ -6,6 +6,7 @@ public interface IBrandRepository
 {
     IEnumerable<Brand> GetAllBrands();
     Brand GetBrandById(int id);
+    int AddBrand(Brand brand);
 }
 
 public class BrandRepository : IBrandRepository
@@ -26,4 +27,10 @@ public class BrandRepository : IBrandRepository
     {
         return this.context.Brands.Find(id);
     }
+
+    public int AddBrand(Brand brand)
+    {
+        this.context.Brands.Add(brand);
+        return this.context.SaveChanges();
+    } 
 }
