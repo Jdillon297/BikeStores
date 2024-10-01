@@ -1,4 +1,5 @@
-﻿using BookStoreApi.Entities;
+﻿using BookStoreApi.Dtos.Products;
+using BookStoreApi.Entities;
 
 namespace BookStoreApi.Data.Repositories;
 

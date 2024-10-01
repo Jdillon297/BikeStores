@@ -1,4 +1,5 @@
 ﻿using BookStoreApi.Dtos.Brands;
+using BookStoreApi.Dtos.Products;
 using BookStoreApi.Entities;
 using BookStoreApi.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -24,6 +25,14 @@ namespace BookStoreApi.Controllers
         public ActionResult<Brand> GetBrandById(int id)
         {            
             return Ok(this.services.GetBrandById(id));
+        }
+
+        [HttpGet("brands/{brandId}/products")]
+        public ActionResult<IEnumerable<GetProductDto>> GetProductsByBrandId(int brandId)
+        {
+            var products = this.services.GetProductsByBrandId(brandId);
+            return Ok(products);    
+
         }
 
         [HttpPatch]
