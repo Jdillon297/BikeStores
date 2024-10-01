@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 
-namespace BookStoreApi.Entities;
+namespace BikeStoresApi.Entities;
 
 public partial class Product
 {

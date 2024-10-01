@@ -1,9 +1,9 @@
-﻿using BookStoreApi.Data;
-using BookStoreApi.Data.Repositories;
-using BookStoreApi.Services;
+﻿using BikeStoresApi.Data;
+using BikeStoresApi.Data.Repositories;
+using BikeStoresApi.Services;
 using Microsoft.EntityFrameworkCore;
 
-namespace BookStoreApi.Extensions;
+namespace BikeStoresApi.Extensions;
 
 public static class DependencyInjection
 {

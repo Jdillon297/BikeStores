@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace BookStoreApi.Entities;
+namespace BikeStoresApi.Entities;
 
 public partial class Stock
 {

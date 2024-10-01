@@ -1,6 +1,6 @@
-﻿using BookStoreApi.Entities;
+﻿using BikeStoresApi.Entities;
 
-namespace BookStoreApi.Data.Repositories;
+namespace BikeStoresApi.Data.Repositories;
 
 public interface IStaffRepository
 {

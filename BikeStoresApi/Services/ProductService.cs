@@ -1,7 +1,7 @@
-﻿using BookStoreApi.Data.Repositories;
-using BookStoreApi.Entities;
+﻿using BikeStoresApi.Data.Repositories;
+using BikeStoresApi.Entities;
 
-namespace BookStoreApi.Services;
+namespace BikeStoresApi.Services;
 
 public interface IProductService
 {

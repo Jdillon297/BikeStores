@@ -1,9 +1,9 @@
-﻿using BookStoreApi.Entities;
-using BookStoreApi.Services;
+﻿using BikeStoresApi.Entities;
+using BikeStoresApi.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BookStoreApi.Controllers
+namespace BikeStoresApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

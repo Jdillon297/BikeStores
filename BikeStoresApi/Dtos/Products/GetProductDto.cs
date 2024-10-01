@@ -1,4 +1,4 @@
-﻿namespace BookStoreApi.Dtos.Products
+﻿namespace BikeStoresApi.Dtos.Products
 {
     public class GetProductDto
     {

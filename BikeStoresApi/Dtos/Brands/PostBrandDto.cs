@@ -1,4 +1,4 @@
-﻿namespace BookStoreApi.Dtos.Brands
+﻿namespace BikeStoresApi.Dtos.Brands
 {
     public class PostBrandDto
     {

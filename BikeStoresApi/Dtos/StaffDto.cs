@@ -1,4 +1,4 @@
-﻿namespace BookStoreApi.Dtos;
+﻿namespace BikeStoresApi.Dtos;
 
 public class StaffDto
 {
