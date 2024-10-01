@@ -1,8 +1,8 @@
-﻿using BookStoreApi.Data.Repositories;
-using BookStoreApi.Dtos;
-using BookStoreApi.Entities;
+﻿using BikeStoresApi.Data.Repositories;
+using BikeStoresApi.Dtos;
+using BikeStoresApi.Entities;
 
-namespace BookStoreApi.Services;
+namespace BikeStoresApi.Services;
 
 public interface IStaffService
 {
