@@ -1,4 +1,4 @@
-using BookStoreApi.Extensions;
+using BikeStoresApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 

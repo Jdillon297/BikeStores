@@ -1,10 +1,10 @@
-﻿using BookStoreApi.Dtos.Brands;
-using BookStoreApi.Dtos.Products;
-using BookStoreApi.Entities;
-using BookStoreApi.Services;
+﻿using BikeStoresApi.Dtos.Brands;
+using BikeStoresApi.Dtos.Products;
+using BikeStoresApi.Entities;
+using BikeStoresApi.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BookStoreApi.Controllers
+namespace BikeStoresApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

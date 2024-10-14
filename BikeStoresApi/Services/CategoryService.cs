@@ -1,7 +1,7 @@
-﻿using BookStoreApi.Entities;
-using BookStoreApi.Data.Repositories;
+﻿using BikeStoresApi.Entities;
+using BikeStoresApi.Data.Repositories;
 
-namespace BookStoreApi.Services;
+namespace BikeStoresApi.Services;
 
 public interface ICategoryService
 {

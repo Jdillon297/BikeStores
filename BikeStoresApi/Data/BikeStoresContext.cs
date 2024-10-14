@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using BookStoreApi.Entities;
+using BikeStoresApi.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace BookStoreApi.Data;
+namespace BikeStoresApi.Data;
 
 public partial class BikeStoresContext : DbContext
 {

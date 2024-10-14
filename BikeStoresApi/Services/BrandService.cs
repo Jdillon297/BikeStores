@@ -1,9 +1,9 @@
-﻿using BookStoreApi.Data.Repositories;
-using BookStoreApi.Dtos.Brands;
-using BookStoreApi.Dtos.Products;
-using BookStoreApi.Entities;
+﻿using BikeStoresApi.Data.Repositories;
+using BikeStoresApi.Dtos.Brands;
+using BikeStoresApi.Dtos.Products;
+using BikeStoresApi.Entities;
 
-namespace BookStoreApi.Services;
+namespace BikeStoresApi.Services;
 
 public interface IBrandService
 {
