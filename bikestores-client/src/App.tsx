@@ -26,7 +26,9 @@ function App() {
       Hello World I am here
       {data.map(b => {
         return (
-          <div key={b.Id}>{b.brandName}</div>
+          <div key={b.Id}>
+            <div>{b.brandName}</div>
+          </div>
         )
       })}
     </div>
